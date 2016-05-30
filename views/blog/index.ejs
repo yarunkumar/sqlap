@@ -1,0 +1,21 @@
+<h3>Blogs</h3>
+<table>
+<tr>
+   <th>ID</th>
+   <th>Name</th>
+   <th>Comments</th>
+   <th></th>
+   <th></th>
+   <th></th>
+ </tr>
+ <% _.each(blogs, function(blog) { %>
+ <tr data-id="<%= blog.id %>" data-model="blog" >
+ <td><%= blog.id %></td>
+ <td><%= blog.name %></td>
+ <td><%= blog.comment %></td>
+ <td><a href="/blog/show/<%= blog.id %>">Show</a></td>
+ <td><a href="/blog/edit/<%= blog.id %>">Edit</a></td>
+ <td><a href="/blog/destroy/<%= blog.id %>">Destroy</a></td>
+ </tr>
+ <%  }) %>
+ </table>
