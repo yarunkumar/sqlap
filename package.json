@@ -29,9 +29,9 @@
     "debug": "node debug app.js",
     "start": "node app.js"
   },
-    "engines": {
-      "node": "0.8.x"
-     },
+  "engines": {
+    "node": "0.8.x"
+  },
   "main": "app.js",
   "repository": {
     "type": "git",
